@@ -24,7 +24,7 @@ cd short-url-generator
 docker-compose up
 ```
 
-The project will start running on your local machine. You can access the frontend web app at ```http://localhost:8080``` and the backend API at http://localhost:8081.
+The project will start running on your local machine. You can access the frontend web app at ```http://localhost:8080``` and the backend API at ```http://localhost:8081```.
 
 
 ## API Endpoint
