@@ -58,3 +58,9 @@ Example Response:
 ## Frontend Web App
 
 The frontend web app is located at ```http://localhost:8080```. It allows users to enter a URL and generate a short URL.
+
+Example :
+![Screenshot from 2023-05-07 20-43-10](https://user-images.githubusercontent.com/37008944/236686379-424f3103-258f-4c6c-b730-9dbad3a9edbe.png)
+
+
+
