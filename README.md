@@ -15,7 +15,7 @@ git clone https://github.com/rahuldotrnair/url-shortener.git
 2. Change into the project directory.
 
 ```bash
-cd short-url-generator
+cd url-shortener
 ```
 
 3. Run the project using Docker Compose.
@@ -50,11 +50,11 @@ Example Response:
     "url": "https://www.google.com",
     "shortened_url": "2gWKoFYm",
     "ip": "127.0.0.1",
-    "createdAt": "2023-05-07T15:30:00.000Z",
-    "expiresAt": "2023-05-14T15:30:00.000Z"
+    "created_at": "2023-05-07T15:30:00.000Z",
+    "expire_at": "2023-05-14T15:30:00.000Z"
 }
 ```
 
 ## Frontend Web App
 
-The frontend web app is located at ```http://localhost:8080```. It allows users to enter a URL and generate a short URL. The app also displays a list of previously generated short URLs and their corresponding original URLs.
+The frontend web app is located at ```http://localhost:8080```. It allows users to enter a URL and generate a short URL.
