@@ -1,0 +1,4 @@
+DATABASE_URL = mongodb+srv://rahuldotr:root123@cluster0.prwu0m4.mongodb.net/test
+API_PORT=8081
+URL_VALIDITY=2
+VUE_APP_API_URL=http://localhost:8081

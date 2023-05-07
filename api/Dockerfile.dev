@@ -1,0 +1,13 @@
+FROM phusion/passenger-nodejs:2.0.0
+
+ENV HOME /root
+
+RUN apt-get update
+RUN mkdir /home/app/api
+
+WORKDIR /home/app/api/
+COPY --chown=app:app package.json .
+RUN npm install
+COPY --chown=app:app . .
+
+CMD ["npm", "run", "dev"]

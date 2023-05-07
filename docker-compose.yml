@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+    api:
+        restart: always
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./api
+        volumes:
+            - /home/app/api/node_modules
+            - ./api:/home/app/api/
+        env_file:
+            - env
+        ports:
+            - '8081:8081'
+        networks:
+            - url-shortner
+    web:
+        restart: always
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./web
+        volumes:
+            - /home/app/web/node_modules
+            - ./web:/home/app/web/
+        env_file:
+            - env
+        ports:
+            - '8080:8080'
+        networks:
+            - url-shortner
+
+networks:
+    url-shortner:
